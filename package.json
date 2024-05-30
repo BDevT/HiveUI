@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"dotenv": "16.4.2",
-		"playwright": "^1.44.1"
+		"playwright": "^1.44.1",
+		"svelte-jsoneditor": "^0.23.4"
 	}
 }
