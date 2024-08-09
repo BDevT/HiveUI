@@ -4,7 +4,7 @@ Ingestion frontend for the HIVE experiment at UKAEA
 
 ## Docker
 
-To run the UI with Docker, use the following command:
+* To run the UI with Docker, use the following command:
     ```sh
     docker run -d -p 3000:3000 ghcr.io/bdevt/hiveui:latest
     ```
@@ -36,20 +36,22 @@ Before you begin, ensure you have met the following requirements:
 
 ## Running HiveUI
 
-```sh
-npm run dev -- --open
-```
+1. Run a development server with npm:
+    ```sh
+    npm run dev -- --open
+    ```
 
 The UI will be available at http://localhost:5173
 
 ## Building HiveUI
 
-1. Build with npm
+1. Build with npm:
     ```sh
     npm run build
     ```
-2. Serve with Node
+2. Serve with Node:
     ```sh
     node build
     ```
-The UI will be available at http:localhost:3000
+
+The UI will be available at http://localhost:3000
