@@ -4,12 +4,13 @@ Ingestion frontend for the HIVE experiment at UKAEA
 
 ## Docker
 
-* To run the UI with Docker, use the following command:
-    ```sh
-    docker run -d -p 3000:3000 ghcr.io/bdevt/hiveui:latest
-    ```
+To run the UI with Docker, use the following command:
 
-The UI will then be available at http://localhost:3000
+```sh
+docker run -d -p 3000:3000 ghcr.io/bdevt/hiveui:latest
+```
+
+The UI will be available at http://localhost:3000
 
 ## Development - Prerequisites
 
