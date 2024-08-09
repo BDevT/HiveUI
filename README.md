@@ -2,37 +2,55 @@
 
 Ingestion frontend for the HIVE experiment at UKAEA
 
-## Prerequisites
+## Docker
+
+To run the UI with Docker, use the following command:
+
+    ```sh
+    docker run -d -p 3000:3000 ghcr.io/bdevt/hiveui:latest
+    ```
+
+The UI will then be available at http://localhost:3000
+
+## Development - Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 * You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
-## Installing <HiveUI>
-
-To install HiveUI, follow these steps:
+## Installing HiveUI
 
 1. Clone the repository:
-    ```bash
+    ```sh
     git clone https://github.com/BDevT/HiveUI.git
     ```
 
 2. Navigate to the project directory:
-    ```bash
+    ```sh
     cd HiveUI
     ```
 
 3. Install the dependencies:
-    ```bash
+    ```sh
     npm install
     ```
 
 ## Running HiveUI
 
-To run HiveUI, follow these steps:
-
-```bash
+```sh
 npm run dev -- --open
 ```
 
-The frontend will be available at http://localhost:5173/
+The UI will be available at http://localhost:5173
+
+## Building HiveUI
+
+1. Build with npm
+    ```sh
+    npm run build
+    ```
+2. Serve with Node
+    ```sh
+    node build
+    ```
+The UI will be available at http:localhost:3000
