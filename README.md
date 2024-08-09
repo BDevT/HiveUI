@@ -35,7 +35,7 @@ Before you begin, ensure you have met the following requirements:
     npm install
     ```
 
-## Running HiveUI
+## Running HiveUI (Development)
 
 1. Run a development server with npm:
     ```sh
@@ -44,7 +44,7 @@ Before you begin, ensure you have met the following requirements:
 
 The UI will be available at http://localhost:5173
 
-## Building HiveUI
+## Running HiveUI (Production)
 
 1. Build with npm:
     ```sh
