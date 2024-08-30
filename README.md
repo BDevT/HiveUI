@@ -4,11 +4,13 @@ Ingestion frontend for the HIVE experiment at UKAEA
 
 ## Docker
 
-To run the UI with Docker, use the following command:
+To run the UI with Docker, clone the repository and use the following command:
 
 ```sh
-docker run -d -p 3000:3000 ghcr.io/bdevt/hiveui:latest
+docker-compose up -d
 ```
+
+The UI is secured with Keycloak and the Keycloak parameters can be modified in the `docker-compose.yaml` file.
 
 The UI will be available at http://localhost:3000
 

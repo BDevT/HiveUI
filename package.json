@@ -15,6 +15,7 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
+		"@auth/sveltekit": "^1.4.2",
 		"@mdi/js": "^7.3.67",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -22,6 +23,8 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"autoprefixer": "^10.4.14",
+		"dotenv": "^16.4.5",
+		"jwt-decode": "^4.0.0",
 		"postcss": "^8.4.24",
 		"postcss-load-config": "^5.0.0",
 		"prettier": "^3.0.0",
@@ -37,9 +40,6 @@
 		"vitest": "^1.0.0"
 	},
 	"dependencies": {
-		"@auth/sveltekit": "^1.4.2",
-		"dotenv": "16.4.2",
-		"jwt-decode": "^4.0.0",
 		"playwright": "^1.44.1"
 	}
 }

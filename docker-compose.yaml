@@ -1,11 +1,14 @@
 services:
-  sveltekit-app:
+  hiveui:
     image: ghcr.io/bdevt/hiveui:latest
+    pull_policy: always    
     ports:
       - "3000:3000"
     environment:
-      - AUTH_KEYCLOAK_ID
-      - AUTH_KEYCLOAK_ISSUER
-      - AUTH_KEYCLOAK_SECRET
       - AUTH_SECRET
+      - AUTH_KEYCLOAK_ID
+      - AUTH_KEYCLOAK_SECRET
+      - AUTH_KEYCLOAK_ISSUER
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

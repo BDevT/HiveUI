@@ -1,18 +1,18 @@
 import { SvelteKitAuth } from '@auth/sveltekit';
 import Keycloak from '@auth/sveltekit/providers/keycloak';
-import {
-	AUTH_KEYCLOAK_ID,
-	AUTH_KEYCLOAK_ISSUER,
-	AUTH_KEYCLOAK_SECRET,
-	AUTH_SECRET
-} from '$env/static/private';
 
-const authjsSecret = AUTH_SECRET; // Use Environment Variables AUTH_SECRET in prod
+const AUTH_KEYCLOAK_ID = process.env.AUTH_KEYCLOAK_ID;
+const AUTH_KEYCLOAK_ISSUER = process.env.AUTH_KEYCLOAK_ISSUER;
+const AUTH_KEYCLOAK_SECRET = process.env.AUTH_KEYCLOAK_SECRET;
+const AUTH_SECRET = process.env.AUTH_SECRET;
+
+// Use the environment variables
+const authjsSecret = AUTH_SECRET; // Use Environment Variable AUTH_SECRET in prod
 
 const kcConfig = {
-	issuer: AUTH_KEYCLOAK_ISSUER,
-	clientId: AUTH_KEYCLOAK_ID,
-	clientSecret: AUTH_KEYCLOAK_SECRET
+  issuer: AUTH_KEYCLOAK_ISSUER,
+  clientId: AUTH_KEYCLOAK_ID,
+  clientSecret: AUTH_KEYCLOAK_SECRET
 };
 
 export const { handle, signIn, signOut } = SvelteKitAuth({
