@@ -4,13 +4,20 @@ Ingestion frontend for the HIVE experiment at UKAEA
 
 ## Docker
 
-To run the UI with Docker, clone the repository and use the following command:
+To run the UI with Docker, clone the repository and add Keycloak credentials to the `docker-compose.yaml` file:
+
+```yaml
+AUTH_SECRET="<openssl rand -hex 32>"
+AUTH_KEYCLOAK_ID="<KeycloakClientID>"
+AUTH_KEYCLOAK_SECRET="<KeycloakClientSecret>"
+AUTH_KEYCLOAK_ISSUER="http://<KeycloakURL>/realms/<realm name>"
+```
+
+Then run the following command:
 
 ```sh
 docker-compose up -d
 ```
-
-The UI is secured with Keycloak and the Keycloak parameters can be modified in the `docker-compose.yaml` file.
 
 The UI will be available at http://localhost:3000
 
@@ -39,6 +46,15 @@ Before you begin, ensure you have met the following requirements:
    npm install
    ```
 
+4. Create a `.env` file in the root directory with the following content:
+
+   ```yaml
+   AUTH_SECRET="<openssl rand -hex 32>"
+   AUTH_KEYCLOAK_ID="<KeycloakClientID>"
+   AUTH_KEYCLOAK_SECRET="<KeycloakClientSecret>"
+   AUTH_KEYCLOAK_ISSUER="http://<KeycloakURL>/realms/<realm name>"
+   ```
+   
 ## Running HiveUI (Development)
 
 1. Run a development server with npm:
