@@ -16,43 +16,45 @@ The UI will be available at http://localhost:3000
 
 Before you begin, ensure you have met the following requirements:
 
-* You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
+- You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
 ## Installing HiveUI
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/BDevT/HiveUI.git
-    ```
+
+   ```sh
+   git clone https://github.com/BDevT/HiveUI.git
+   ```
 
 2. Navigate to the project directory:
-    ```sh
-    cd HiveUI
-    ```
+
+   ```sh
+   cd HiveUI
+   ```
 
 3. Install the dependencies:
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 ## Running HiveUI (Development)
 
 1. Run a development server with npm:
-    ```sh
-    npm run dev -- --open
-    ```
+   ```sh
+   npm run dev -- --open
+   ```
 
 The UI will be available at http://localhost:5173
 
 ## Running HiveUI (Production)
 
 1. Build with npm:
-    ```sh
-    npm run build
-    ```
+   ```sh
+   npm run build
+   ```
 2. Serve with Node:
-    ```sh
-    node build
-    ```
+   ```sh
+   node build
+   ```
 
 The UI will be available at http://localhost:3000

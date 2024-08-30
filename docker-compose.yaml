@@ -1,0 +1,11 @@
+services:
+  sveltekit-app:
+    image: ghcr.io/bdevt/hiveui:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - AUTH_KEYCLOAK_ID
+      - AUTH_KEYCLOAK_ISSUER
+      - AUTH_KEYCLOAK_SECRET
+      - AUTH_SECRET
+    restart: unless-stopped
