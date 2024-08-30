@@ -27,6 +27,8 @@ Before you begin, ensure you have met the following requirements:
 
 - You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
+Developed with Node.js v21.1.0 and npm v10.2.0
+
 ## Installing HiveUI
 
 1. Clone the repository:
@@ -54,7 +56,7 @@ Before you begin, ensure you have met the following requirements:
    AUTH_KEYCLOAK_SECRET="<KeycloakClientSecret>"
    AUTH_KEYCLOAK_ISSUER="http://<KeycloakURL>/realms/<realm name>"
    ```
-   
+
 ## Running HiveUI (Development)
 
 1. Run a development server with npm:
@@ -70,9 +72,9 @@ The UI will be available at http://localhost:5173
    ```sh
    npm run build
    ```
-2. Serve with Node:
+2. Serve with npm:
    ```sh
-   node build
+   npm run preview
    ```
 
-The UI will be available at http://localhost:3000
+The UI will be available at http://localhost:4173

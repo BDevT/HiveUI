@@ -11,4 +11,4 @@ COPY --from=builder /app/build build/
 COPY --from=builder /app/package*.json ./
 EXPOSE 3000
 ENV NODE_ENV=production
-CMD [ "node", "build" ]
+CMD [ "node", "build"]
