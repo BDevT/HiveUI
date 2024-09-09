@@ -9,25 +9,13 @@
 	settings({
 		components: {
 			AppBar: {
-				classes: 'bg-primary text-white shadow-md'
-			},
-			AppLayout: {
-				classes: {
-					nav: 'bg-neutral-800'
-				}
-			},
-			NavItem: {
-				classes: {
-					root: 'text-sm text-gray-400 pl-6 py-2 hover:text-white hover:bg-gray-300/10 [&:where(.is-active)]:text-sky-400 [&:where(.is-active)]:bg-gray-500/10'
-				}
+				classes: 'bg-custom-blue text-white shadow-md'
 			}
 		}
 	});
 </script>
 
-<AppLayout areas="'header header' 'aside main'">
-	<svelte:fragment slot="nav"></svelte:fragment>
-
+<AppLayout areas="'header header' 'aside main'" navWidth=0>
 	<AppBar title="HIVE Data Ingestion" class="main-appbar">
 		<div slot="actions" class="flex items-center justify-end w-full">
 			<User data={{ user: data?.session?.user, status: Boolean(data?.session) }} />
